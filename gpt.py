@@ -4,7 +4,7 @@ import colorama
 
 colorama.init()
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 os.system('cls' if sys.platform == 'win32' else 'clear')
