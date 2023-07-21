@@ -4,7 +4,7 @@ import colorama
 
 colorama.init()
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 os.system('cls' if sys.platform == 'win32' else 'clear')
@@ -17,7 +17,7 @@ else:
     fck = open('gpt-history.txt', 'r').read()
 
 while 1:
-    question = input(f"\n{colorama.Back.YELLOW}>>> ")
+    question = input(f"\n{colorama.Back.YELLOW}>>>{colorama.Style.RESET_ALL}")
     if question == 'exit':
         print(colorama.Style.RESET_ALL)
         os.system('cls' if sys.platform == 'win32' else 'clear')
@@ -28,4 +28,4 @@ while 1:
         f.write(f'{fck}\nYou: {question}\nGPT: {chat_completion["choices"][0]["message"]["content"]}')
         f.close()
 
-    print(f"{colorama.Back.GREEN}{chat_completion['choices'][0]['message']['content']}")
+    print(f"{colorama.Back.BLACK}{chat_completion['choices'][0]['message']['content']}")
