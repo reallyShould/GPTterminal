@@ -11,6 +11,7 @@ os.system('cls' if sys.platform == 'win32' else 'clear')
 
 if not os.path.exists('gpt-history.txt'):
     open('gpt-history.txt', 'a+')
+    fck = ''
 else:
     print(open('gpt-history.txt', 'r').read())
     fck = open('gpt-history.txt', 'r').read()
